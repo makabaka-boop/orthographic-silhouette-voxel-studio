@@ -1,0 +1,7 @@
+services:
+  voxels:
+    build: .
+    image: voxels:latest
+    ports:
+      - "8080:80"
+    restart: unless-stopped
